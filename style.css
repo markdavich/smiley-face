@@ -1,9 +1,9 @@
 :root {
   --font-color: rgb(211,208,217);
   --lt-gray: rgb(229,226,235);
-  --dk-gray: rgb(209,200,217);
+  --dk-gray: rgb(193,184,205);
   --lt-border: rgb(199,195,209);
-  --dk-border: rgb(196,186,210);
+  --dk-border: rgb(130, 124, 138);
 }
 .title {
   text-align: center;
@@ -15,10 +15,18 @@
   color: var(--font-color);
 }
 
-.lt-gray-rect {
-  padding: 3px;
+.light {
   background-color: var(--lt-gray);
   border: solid var(--lt-border) 1px;
+}
+
+.dark {
+  background-color: var(--dk-gray);
+  border: solid var(--dk-border) 1px;
+}
+
+.smiley {
+  padding: 3px;
   height: 50px;
   background-image: url(images/smile-regular.svg);
   opacity: 0.25;
@@ -27,7 +35,7 @@
   background-size: 90% 90%;
 }
 
-.lt-gray-rect:hover {
+.smiley:hover {
   background-image: url(images/smile-wink-regular.svg);
 }
 
